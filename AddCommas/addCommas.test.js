@@ -27,6 +27,4 @@ describe("#addCommas", () => {
   test("handles zero", () => {
     expect(addCommas(0)).toBe("0");
   });
-
-  // Add more test cases for edge cases or additional scenarios
 });

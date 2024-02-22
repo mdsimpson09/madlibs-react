@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  text-align: center;
+  color: #333;
 }
 
 .App-logo {
@@ -35,4 +37,131 @@
   to {
     transform: rotate(360deg);
   }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f6f6f6; 
+}
+
+.MadlibForm, .MadlibStory {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+input {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.MadlibForm input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 20px; 
+  box-sizing: border-box; 
+}
+
+
+.MadlibForm button, .MadlibStory button {
+  background-color: #008080; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 20px; 
+  transition: background-color 0.3s ease;
+}
+
+.MadlibForm button:hover, .MadlibStory button:hover {
+  background-color: #004d4d; 
+}
+
+
+.MadlibForm h2, .MadlibStory h2 {
+  font-family: 'Arial', sans-serif; 
+  color: #008080; 
+}
+
+
+.MadlibStory p {
+  text-align: justify;
+  margin: 20px;
+  color: #333; 
+}
+.MadlibForm h2, .MadlibStory h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color: #004d4d; 
+
+}
+
+button{
+  background-color: #008080; 
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  margin: 20px 10px;
+  cursor: pointer;
+  border-radius: 20px; 
+  transition: background-color 0.3s ease;
+}
+
+button.active {
+  background-color: #013636; 
+}
+
+button:hover,
+button.active:hover {
+  background-color: #003d3d;
+}
+
+.GrammarDefinitions {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f9f9f9; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.GrammarDefinitions h2 {
+  color: #008080; 
+  font-family: 'Arial', sans-serif;
+}
+
+.Definition {
+  margin-bottom: 10px;
+}
+
+.Definition h3 {
+  color: #005052; 
+  margin-bottom: 2px;
+}
+
+.Definition p {
+  color: #333; 
+  margin-left: 20px;
+}
+
+.Story {
+
+  font-family: 'Arial', sans-serif;
+  font-size: 40px;
+}
+
+.Input{
+  color: #007474; 
 }

@@ -1,9 +1,10 @@
+//src/MadlibStory.js
 import React from 'react';
 
 const MadlibStory = ({ story, resetStory }) => {
   return (
     <div className="MadlibStory">
-      <h2>Your Madlib Story</h2>
+      <h1>Your Mad Lib Story</h1>
       <p>{story}</p>
       <button onClick={resetStory}>Restart</button>
     </div>
