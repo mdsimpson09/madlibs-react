@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GrammarDefinitions from './GrammarDefinitions';
-import './App.css';
+import '../App.css';
 
 class MadlibForm extends Component {
       constructor() {

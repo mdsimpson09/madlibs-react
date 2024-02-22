@@ -1,22 +1,22 @@
 //src/app.js
 
 import React, { Component } from 'react';
-import StoryOptions from './StoryOptions';
-import MadlibForm from './MadlibForm';
-import MadlibStory from './MadlibStory';
-import GrammarDefinitions from './GrammarDefinitions';
+import StoryOptions from './components/StoryOptions';
+import MadlibForm from './components/MadlibForm';
+import MadlibStory from './components/MadlibStory';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentStoryOption: null, // Added state to hold the story option
+      currentStoryOption: null, 
       story: null,
     };
   }
 
   setStoryOption = (option) => {
-    this.setState({ currentStoryOption: option, story: null }); // Update to set the story option
+    this.setState({ currentStoryOption: option, story: null }); 
   };
 
   setStory = (story) => {
@@ -24,7 +24,7 @@ class App extends Component {
   };
 
   resetStory = () => {
-    this.setState({ story: null, currentStoryOption: null }); // Reset both story and story option
+    this.setState({ story: null, currentStoryOption: null }); 
   };
 
   render() {
@@ -47,48 +47,5 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-// import logo from './logo.svg';
-// import './App.css';
-// import React, { Component } from 'react';
-// import StoryOptions from './StoryOptions'; // Optional for super bonus
-// import MadlibForm from './MadlibForm';
-// import MadlibStory from './MadlibStory';
-
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       story: null,
-//     };
-//   }
-
-//   setStory = (story) => {
-//     this.setState({ story });
-//   };
-
-//   resetStory = () => {
-//     this.setState({ story: null });
-//   };
-
-//   render() {
-//     return (
-//       <div className="App">
-//         {/* Optional for super bonus */}
-//         <StoryOptions setStory={this.setStory} />
-
-//         {this.state.story ? (
-//           <MadlibStory story={this.state.story} resetStory={this.resetStory} />
-//         ) : (
-//           <MadlibForm setStory={this.setStory} />
-//         )}
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;
 
 
