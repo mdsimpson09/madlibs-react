@@ -20,7 +20,7 @@ class MadlibForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { noun, verb, adjective, adverb } = this.state;
-    const { storyOption } = this.props; // Use the selected story option
+    const { storyOption } = this.props; 
     let story = '';
 
     if (!noun || !verb || !adjective || !adverb) {
